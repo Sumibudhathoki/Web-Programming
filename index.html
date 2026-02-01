@@ -2,110 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BookNest | Best Sellers</title>
-
-    <style>
-    body {
-        background: linear-gradient(135deg, #556a7a, #556a7a);
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 30px;
-    }
-
-    h1 {
-        color: #0e010f;
-        margin-bottom: 0px;
-    }
-
-    h3 {
-        color: #070003;
-        margin-top: 0;
-    }
-
-    h2 {
-        color: #060b0f;
-        margin-top: 30px;
-    }
-
-    .book {
-        display: inline-block;
-        width: 180px;
-        margin: 15px;
-        vertical-align: top;
-        background: white;
-        padding: 10px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .book img {
-        border-radius: 8px;
-    }
-</style>
+    <title>BookNest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Welcome to BookNest</h1>
-    <h3>What do you wanna read?</h3>
+<header>
+    <h1>📚 BookNest</h1>
+    <p>Your Online Book Store</p>
+</header>
 
-    <h2>Find Your Next Great Read Among Our Best Sellers</h2>
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('new')">New Arrivals</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
 
-    <div>
+<main>
 
-        <!-- Book 1 -->
-        <div class="book">
-            <a href="https://thuprai.com/book/i-dont-love-you-anymore/">
-                <img src="https://media.thuprai.com/__sized__/front_covers/i-dont-love-you-anymore_SC4WizQ-thumbnail-280x405-70.jpg" width="180" height="260">
-            </a>
-            <p><strong>I Don't Love You Anymore</strong></p>
-            <p>by Rithvik Singh</p>
-            <p>Rs. 698</p>
+<!-- HOME -->
+<section id="home" class="page">
+    <h2 class="center">Featured Books</h2>
+    <div class="cards">
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c">
+                <div class="overlay">
+                    <p>A mysterious journey full of secrets.</p>
+                </div>
+            </div>
+            <h3>The Hidden Path</h3>
+            <p class="author">Jane Doe</p>
         </div>
 
-        <!-- Book 2 -->
-        <div class="book">
-            <a href="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1298524190i/10579909.jpg">
-                <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1298524190i/10579909.jpg" width="180" height="260">
-            </a>
-            <p><strong>Karnali Blues</strong></p>
-            <p>by Buddhisagar</p>
-            <p>Rs. 799</p>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090">
+                <div class="overlay">
+                    <p>The future of technology and innovation.</p>
+                </div>
+            </div>
+            <h3>Dreams of Tomorrow</h3>
+            <p class="author">John Roe</p>
         </div>
 
-        <!-- Book 3 -->
-        <div class="book">
-            <a href="https://media.thuprai.com/front_covers/nilo-prem_7dNyoMP.jpg">
-                <img src="https://media.thuprai.com/front_covers/nilo-prem_7dNyoMP.jpg" width="180" height="260">
-            </a>
-            <p><strong>Nilo Prem</strong></p>
-            <p>by Purushottam Bajagai</p>
-            <p>Rs. 545</p>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+                <div class="overlay">
+                    <p>Learn modern programming concepts.</p>
+                </div>
+            </div>
+            <h3>Coding the Future</h3>
+            <p class="author">Alex Smith</p>
         </div>
 
-        <!-- Book 4 -->
-        <div class="book">
-            <a href="https://m.media-amazon.com/images/I/51fCKdDtbjL._AC_UF1000,1000_QL80_.jpg">
-                <img src="https://m.media-amazon.com/images/I/51fCKdDtbjL._AC_UF1000,1000_QL80_.jpg" width="180" height="260">
-            </a>
-            <p><strong>Palpasa Cafe</strong></p>
-            <p>by Narayan Wagle</p>
-            <p>Rs. 698</p>
-        </div>
-
-        <!-- Book 5 -->
-        <div class="book">
-            <a href="https://media.thuprai.com/__sized__/front_covers/urmal_dt4HozL-thumbnail-280x405-70.jpg">
-                <img src="https://media.thuprai.com/__sized__/front_covers/urmal_dt4HozL-thumbnail-280x405-70.jpg" width="180" height="260">
-            </a>
-            <p><strong>Urmaal</strong></p>
-            <p>by Chhuden Kabimo</p>
-            <p>Rs. 699</p>
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d">
+                <div class="overlay">
+                    <p>Design principles for beginners.</p>
+                </div>
+            </div>
+            <h3>Design Essentials</h3>
+            <p class="author">Maya Ray</p>
         </div>
 
     </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section id="new" class="page hidden">
+    <h2 class="center">New Arrivals</h2>
+    <div class="cards">
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765">
+                <div class="overlay">
+                    <p>Understanding the human mind.</p>
+                </div>
+            </div>
+            <h3>The Mind Game</h3>
+            <p class="author">Robert King</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
+                <div class="overlay">
+                    <p>Artificial Intelligence made simple.</p>
+                </div>
+            </div>
+            <h3>AI Simplified</h3>
+            <p class="author">Sarah Lee</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1473755504818-b72b6dfdc226">
+                <div class="overlay">
+                    <p>Build habits for success.</p>
+                </div>
+            </div>
+            <h3>Atomic Focus</h3>
+            <p class="author">James Holt</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353">
+                <div class="overlay">
+                    <p>Creative thinking techniques.</p>
+                </div>
+            </div>
+            <h3>Think Different</h3>
+            <p class="author">Emily Stone</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+                <div class="overlay">
+                    <p>Master modern UI design.</p>
+                </div>
+            </div>
+            <h3>UI Mastery</h3>
+            <p class="author">Daniel Cruz</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page hidden">
+    <div class="box">
+        <h2>Contact Details</h2>
+        <p><strong>Name:</strong> Sumi Budhathoki</p>
+        <p><strong>Email:</strong> sumibudhathoki220@gmail.com</p>
+        <p><strong>Course:</strong> Web Programming</p>
+        <p><strong>Year:</strong> 2026</p>
+        <p><strong>College:</strong> PGS</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 BookNest</p>
+</footer>
+
+<script>
+function showSection(sectionId) {
+    document.querySelectorAll('.page').forEach(section => {
+        section.classList.add('hidden');
+    });
+    document.getElementById(sectionId).classList.remove('hidden');
+}
+</script>
 
 </body>
 </html>
-<!-- test update -->

@@ -1,37 +1,112 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #8971bf; /* blue background */
-    color: white;
 }
 
-/* Header / Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #8b6398;
+body {
+    background: #faf8f3;
+    color: #333;
 }
 
-.navbar h1 {
-    margin: 0;
+/* Header */
+header {
+    background: #e7edd1;
+    text-align: center;
+    padding: 25px;
 }
 
-/* Navigation links */
+/* Nav */
+nav {
+    background: #f4f1e6;
+    text-align: center;
+    padding: 10px;
+}
+
 nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    margin: 0 15px;
+    cursor: pointer;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-/* Main content */
-.content {
+/* Sections */
+.page {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
     text-align: center;
-    padding: 60px 20px;
+}
+
+.image-box {
+    position: relative;
+    height: 200px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.author {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Box */
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #e7edd1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
