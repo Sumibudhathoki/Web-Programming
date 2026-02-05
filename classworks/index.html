@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr 200px;
+  grid-template-areas:
+    "logo header header header header "
+ "logo header header header header "
+    "banner banner banner banner banner "
+     "banner banner banner banner banner"
+    "banner banner banner banner banner"
+    "nav content content content ad"
+    "nav content content content ad"
+    "nav content content content ad"
+     "nav content content content ad"
+    "nav content content content ad"
+    "nav content content content ad"
+    "nav content content content ad"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer";
+  gap: 30px;
+  background-color: rgb(67, 205, 184);
+  padding: 10px;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  border: 3px solid #000;
+}
+
+/* grid areas */
+.logo { grid-area: logo; }
+.header { grid-area: header; }
+.banner { grid-area: banner; }
+.nav { grid-area: nav; }
+.content { grid-area: content; }
+.ad { grid-area: ad; }
+.footer { grid-area: footer; }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="logo">Logo</div>
+  <div class="header">Header</div>
+  <div class="banner">Banner</div>
+  <div class="nav">Navigation</div>
+  <div class="content">Content Section</div>
+  <div class="ad">Ad</div>
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
