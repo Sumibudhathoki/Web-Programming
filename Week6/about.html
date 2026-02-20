@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About - BookNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo">📚 Book Nest</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="books.html">Books</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="#" onclick="toggleCart()">🛒</a></li>
+<li><button onclick="toggleDarkMode()" class="dark-btn">🌙</button></li>
+</ul>
+</nav>
+</header>
+
+<section class="container" style="padding-top:120px; text-align:center;">
+<h2>About BookNest</h2>
+<p>BookNest is an online bookstore providing fiction, mystery, and Nepali novels. Our goal is to connect readers with stories from around the world. Enjoy book rental, membership, and home delivery services.</p>
+</section>
+
+<footer>
+<p>© 2026 Book Nest | Designed by Sumi</p>
+</footer>
+
+<div id="cart" class="cart">
+<h3>Your Cart</h3>
+<p id="cartItems">0 items</p>
+<button onclick="toggleCart()">Close</button>
+</div>
+
+<button onclick="scrollToTop()" id="topBtn">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>

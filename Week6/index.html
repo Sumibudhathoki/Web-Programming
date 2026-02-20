@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>Book Nest</title>
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">📚 Book Nest</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="toggleCart()">🛒</a></li>
+       
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-left">
+        <h1>Welcome to <span>BookNest</span></h1>
+        <p>
+            Your cozy digital library where stories, knowledge, 
+            and imagination live together. Discover books from 
+            every genre and find your next favorite read.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#gallery" class="btn-primary">Explore Collection</a>
+            <a href="#services" class="btn-secondary">Our Services</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <img src="https://i.pinimg.com/1200x/53/43/27/5343279168896aefcec1832c280e7c8f.jpg" alt="Library Image">
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+    <h2>Our Collection</h2>
+
+   
+</div><!-- FICTION -->
+<h3 class="genre-title">Fiction</h3>
+
+<div class="book-container" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; width:95%; margin:auto;">
+
+    <div class="book-card fiction" data-price="40">
+        <img src="https://i.pinimg.com/736x/d1/a3/7e/d1a37e6aa4f918bb2d50c8a9e936c90a.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>It starts with us</h4>
+        <p>$40</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="25">
+        <img src="https://i.pinimg.com/1200x/1c/a4/9d/1ca49d5c010910174cf2b2e676c9a741.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>If he had been with me</h4>
+        <p>$25</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="35">
+        <img src="https://i.pinimg.com/736x/f4/8c/5b/f48c5b0a92bf3c881d7bccf3d43b18a6.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Better than the movie</h4>
+        <p>$35</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="28">
+        <img src="https://i.pinimg.com/1200x/da/58/8a/da588acd8872158d35d46e2e29476e24.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>A thousand boy kisses</h4>
+        <p>$28</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</div>
+</div><!-- Mystery -->
+<h3 class="genre-title">Mystery</h3>
+
+<div class="book-container" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; width:95%; margin:auto;">
+
+    <div class="book-card fiction" data-price="40">
+        <img src="https://i.pinimg.com/1200x/c0/2d/fa/c02dfaf5251d30f419c091e1e396ca72.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Then She was gone</h4>
+        <p>$40</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="25">
+        <img src="https://i.pinimg.com/736x/46/b6/5a/46b65aec207ef0ae441a5f5eeea65447.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>The silent Patients</h4>
+        <p>$25</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="35">
+        <img src="https://i.pinimg.com/736x/f5/6e/b5/f56eb5ffec0f7fd3ce9e1e5f1a744213.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Good girl bad blood</h4>
+        <p>$35</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="28">
+        <img src="https://i.pinimg.com/736x/2f/59/8c/2f598cec62eb76a7af684add79c36b33.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Girl with pisces</h4>
+        <p>$28</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</div>
+
+
+    <!-- NON FICTION -->
+   <h3 class="genre-title">Nepali Novels</h3>
+
+<div class="book-container" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; width:95%; margin:auto;">
+
+    <div class="book-card fiction" data-price="40">
+        <img src="https://i.pinimg.com/736x/7e/de/5a/7ede5acb9dfc09f927c740e4091ba261.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Palpasa Cafe</h4>
+        <p>$40</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="25">
+        <img src="https://i.pinimg.com/1200x/c8/3c/f1/c83cf1b782c84704142a1113fd52a64a.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Ek Sarko maya</h4>
+        <p>$25</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="35">
+        <img src="https://i.pinimg.com/736x/b7/8d/5d/b78d5d02447b121aae536bd2f2a35b5c.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Seto Dhharti</h4>
+        <p>$35</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="28">
+        <img src="https://i.pinimg.com/736x/29/43/84/294384f74494cdfd4e4707f0bfb93a3a.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Karnali Blues</h4>
+        <p>$28</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    
+
+</div>
+    <!-- HORROR -->
+   <h3 class="genre-title">Horror</h3>
+
+<div class="book-container" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; width:95%; margin:auto;">
+
+    <div class="book-card fiction" data-price="40">
+        <img src="https://i.pinimg.com/736x/c9/5a/72/c95a72a1f6b9db3115ff135e9827c61d.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Asylum</h4>
+        <p>$40</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="25">
+        <img src="https://i.pinimg.com/736x/74/95/85/749585f4d7b294fcbe1656d8fd5474bc.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Sanctum</h4>
+        <p>$25</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="35">
+        <img src="https://i.pinimg.com/736x/e8/49/88/e8498874e65a9dbc112115b96a87bebe.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>The Warden</h4>
+        <p>$35</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="book-card fiction" data-price="28">
+        <img src="https://i.pinimg.com/736x/b0/15/d5/b015d52936c9e3149259fde68211a247.jpg"
+             style="width:100%; height:220px; object-fit:cover;">
+        <h4>Court of shawdows</h4>
+        <p>$28</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</div>
+</section>
+<!-- Pagination Section -->
+<nav aria-label="Page navigation" class="my-5">
+  <ul class="pagination justify-content-center">
+
+ 
+    <li class="page-item">
+      <a class="page-link" href="about.html" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Previous</span>
+      </a>
+    </li>
+
+    <li class="page-item"><a class="page-link" href="about.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="services.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="contact.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="index.html#home">4</a></li>
+
+  
+    <li class="page-item">
+      <a class="page-link" href="services.html" aria-label="Next">
+        <span aria-hidden="true">Next &raquo;</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">Book Rental</div>
+    <div class="service-box">Membership</div>
+    <div class="service-box">Home Delivery</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button class="btn">Send Message</button>
+</section>
+
+<!-- CART -->
+<div id="cart" class="cart">
+    <h3>Your Cart</h3>
+    <p id="cartItems">0 items</p>
+    <button onclick="toggleCart()">Close</button>
+</div>
+
+<!-- BACK TO TOP -->
+<button onclick="scrollToTop()" id="topBtn">↑</button>
+
+<footer>
+    <p>© 2026 Book Nest | Designed by Sumi </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
