@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It Starts With Us - BookNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">📚 Book Nest</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="books.html">Books</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="#" onclick="toggleCart()">🛒</a></li>
+<li><button onclick="toggleDarkMode()" class="dark-btn">🌙</button></li>
+</ul>
+</nav>
+</header>
+
+<section style="padding-top:120px; text-align:center;">
+<img src="https://i.pinimg.com/736x/d1/a3/7e/d1a37e6aa4f918bb2d50c8a9e936c90a.jpg" alt="It Starts With Us" style="width:250px; border-radius:10px;">
+<h2>It Starts With Us</h2>
+<p><strong>Author:</strong> Colleen Hoover</p>
+<p><strong>Description:</strong> Romantic novel about love, healing, and second chances.</p>
+<h4>Price: $40</h4>
+<a href="books.html" class="btn btn-secondary">Back to Books</a>
+</section>
+
+<footer>
+<p>© 2026 Book Nest | Designed by Sumi</p>
+</footer>
+
+<div id="cart" class="cart">
+<h3>Your Cart</h3>
+<p id="cartItems">0 items</p>
+<button onclick="toggleCart()">Close</button>
+</div>
+
+<button onclick="scrollToTop()" id="topBtn">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>

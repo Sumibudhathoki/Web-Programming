@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books | Book Nest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">📚 Book Nest</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="books.html">Books</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="gallery" style="padding-top:120px;">
+<h2>Our Collection</h2>
+
+<!-- ================= FICTION ================= -->
+<h3 class="genre-title">Fiction</h3>
+
+<div class="book-container">
+<div class="book-card fiction" data-price="40">
+<img src="https://i.pinimg.com/736x/d1/a3/7e/d1a37e6aa4f918bb2d50c8a9e936c90a.jpg">
+<h4>It Starts With Us</h4>
+<p>$40</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card fiction" data-price="25">
+<img src="https://i.pinimg.com/1200x/1c/a4/9d/1ca49d5c010910174cf2b2e676c9a741.jpg">
+<h4>If He Had Been With Me</h4>
+<p>$25</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card fiction" data-price="35">
+<img src="https://i.pinimg.com/736x/f4/8c/5b/f48c5b0a92bf3c881d7bccf3d43b18a6.jpg">
+<h4>Better Than The Movies</h4>
+<p>$35</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card fiction" data-price="28">
+<img src="https://i.pinimg.com/1200x/da/58/8a/da588acd8872158d35d46e2e29476e24.jpg">
+<h4>A Thousand Boy Kisses</h4>
+<p>$28</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+</div>
+
+<!-- ================= MYSTERY ================= -->
+<h3 class="genre-title">Mystery</h3>
+
+<div class="book-container">
+
+<div class="book-card mystery" data-price="40">
+<img src="https://i.pinimg.com/1200x/c0/2d/fa/c02dfaf5251d30f419c091e1e396ca72.jpg">
+<h4>Then She Was Gone</h4>
+<p>$40</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card mystery" data-price="25">
+<img src="https://i.pinimg.com/736x/46/b6/5a/46b65aec207ef0ae441a5f5eeea65447.jpg">
+<h4>The Silent Patient</h4>
+<p>$25</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card mystery" data-price="35">
+<img src="https://i.pinimg.com/736x/f5/6e/b5/f56eb5ffec0f7fd3ce9e1e5f1a744213.jpg">
+<h4>Good Girl Bad Blood</h4>
+<p>$35</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card mystery" data-price="28">
+<img src="https://i.pinimg.com/736x/2f/59/8c/2f598cec62eb76a7af684add79c36b33.jpg">
+<h4>Girl with Pisces</h4>
+<p>$28</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+
+<!-- ================= NEPALI ================= -->
+<h3 class="genre-title">Nepali Novels</h3>
+
+<div class="book-container">
+
+<div class="book-card nepali" data-price="40">
+<img src="https://i.pinimg.com/736x/7e/de/5a/7ede5acb9dfc09f927c740e4091ba261.jpg">
+<h4>Palpasa Cafe</h4>
+<p>$40</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card nepali" data-price="25">
+<img src="https://i.pinimg.com/1200x/c8/3c/f1/c83cf1b782c84704142a1113fd52a64a.jpg">
+<h4>Ek Sarko Maya</h4>
+<p>$25</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card nepali" data-price="35">
+<img src="https://i.pinimg.com/736x/b7/8d/5d/b78d5d02447b121aae536bd2f2a35b5c.jpg">
+<h4>Seto Dharti</h4>
+<p>$35</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card nepali" data-price="28">
+<img src="https://i.pinimg.com/736x/29/43/84/294384f74494cdfd4e4707f0bfb93a3a.jpg">
+<h4>Karnali Blues</h4>
+<p>$28</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+
+<!-- ================= HORROR ================= -->
+<h3 class="genre-title">Horror</h3>
+
+<div class="book-container">
+
+<div class="book-card horror" data-price="40">
+<img src="https://i.pinimg.com/736x/c9/5a/72/c95a72a1f6b9db3115ff135e9827c61d.jpg">
+<h4>Asylum</h4>
+<p>$40</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card horror" data-price="25">
+<img src="https://i.pinimg.com/736x/74/95/85/749585f4d7b294fcbe1656d8fd5474bc.jpg">
+<h4>Sanctum</h4>
+<p>$25</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card horror" data-price="35">
+<img src="https://i.pinimg.com/736x/e8/49/88/e8498874e65a9dbc112115b96a87bebe.jpg">
+<h4>The Warden</h4>
+<p>$35</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="book-card horror" data-price="28">
+<img src="https://i.pinimg.com/736x/b0/15/d5/b015d52936c9e3149259fde68211a247.jpg">
+<h4>Court of Shadows</h4>
+<p>$28</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Book Nest | Designed by Sumi</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
