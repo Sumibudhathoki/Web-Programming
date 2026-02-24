@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 BookNest</h1>
+    <p>Your Online Book Store</p>
+</header>
+
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('new')">New Arrivals</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="page">
+    <h2 class="center">Featured Books</h2>
+    <div class="cards">
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c">
+                <div class="overlay">
+                    <p>A mysterious journey full of secrets.</p>
+                </div>
+            </div>
+            <h3>The Hidden Path</h3>
+            <p class="author">Jane Doe</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090">
+                <div class="overlay">
+                    <p>The future of technology and innovation.</p>
+                </div>
+            </div>
+            <h3>Dreams of Tomorrow</h3>
+            <p class="author">John Roe</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+                <div class="overlay">
+                    <p>Learn modern programming concepts.</p>
+                </div>
+            </div>
+            <h3>Coding the Future</h3>
+            <p class="author">Alex Smith</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d">
+                <div class="overlay">
+                    <p>Design principles for beginners.</p>
+                </div>
+            </div>
+            <h3>Design Essentials</h3>
+            <p class="author">Maya Ray</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section id="new" class="page hidden">
+    <h2 class="center">New Arrivals</h2>
+    <div class="cards">
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765">
+                <div class="overlay">
+                    <p>Understanding the human mind.</p>
+                </div>
+            </div>
+            <h3>The Mind Game</h3>
+            <p class="author">Robert King</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
+                <div class="overlay">
+                    <p>Artificial Intelligence made simple.</p>
+                </div>
+            </div>
+            <h3>AI Simplified</h3>
+            <p class="author">Sarah Lee</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1473755504818-b72b6dfdc226">
+                <div class="overlay">
+                    <p>Build habits for success.</p>
+                </div>
+            </div>
+            <h3>Atomic Focus</h3>
+            <p class="author">James Holt</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353">
+                <div class="overlay">
+                    <p>Creative thinking techniques.</p>
+                </div>
+            </div>
+            <h3>Think Different</h3>
+            <p class="author">Emily Stone</p>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+                <div class="overlay">
+                    <p>Master modern UI design.</p>
+                </div>
+            </div>
+            <h3>UI Mastery</h3>
+            <p class="author">Daniel Cruz</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page hidden">
+    <div class="box">
+        <h2>Contact Details</h2>
+        <p><strong>Name:</strong> Sumi Budhathoki</p>
+        <p><strong>Email:</strong> sumibudhathoki220@gmail.com</p>
+        <p><strong>Course:</strong> Web Programming</p>
+        <p><strong>Year:</strong> 2026</p>
+        <p><strong>College:</strong> PGS</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 BookNest</p>
+</footer>
+
+<script>
+function showSection(sectionId) {
+    document.querySelectorAll('.page').forEach(section => {
+        section.classList.add('hidden');
+    });
+    document.getElementById(sectionId).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
